@@ -1,0 +1,365 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Juan helped me with this and the search bar as well as the dope pic */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+.header{
+    background: url("hero.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tlList{
+    width:70%;
+    float:left;
+    
+}
+.buttons{
+    width:30%;
+    float:left;
+    padding-top:50px;
+
+}
+.buttons a{
+    margin-left: 150px;
+    color: white;
+}
+.buttons i{
+    display:none;
+    padding:0;
+}
+.header nav ul a{
+    color:white;   
+    margin-top: 15px;
+}
+.header nav ul li{
+    margin-left: 8%;
+    font-size: 18px;
+    display:inline;  
+}
+.header nav button{
+    background-color: rgb(31, 30, 30);
+    color: white;
+    font-size: 16.2px;
+    padding: 0px 20px 0px 20px;
+    float:right;
+    margin-right: 100px;
+    
+}
+.header nav button:hover{
+    background-color: rgb(240, 85, 150);
+}
+
+.header .logo img{
+    width:170px;
+    margin: 7% 0px 20px 48%;
+}
+.header nav ul{
+    padding-top: 50px;
+}
+.navForm{
+    text-align: center;
+    width:50%;
+    margin:0 auto;
+}
+.navForm input{
+    background:none;
+    border:none;
+}
+.navForm > form > section{
+    background-color: white;
+    padding:0.5rem;
+    border-radius:5px;
+    text-align: left;
+}
+.navForm > form > section > section{
+    width:50%;
+    float:left;
+}
+.bottomLinks{
+    width:35%;
+    margin:0 auto;
+}
+
+.bottomLinks ul li {
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font:12px;
+    margin-left:20px;
+}
+.bottomLinks ul li a {
+    color: white;
+}
+.bottomText{
+    margin-top: 200px;
+}
+.bottomText p{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+.bottomLast section h1{
+    color:red;
+    text-align: center;
+    font-size: 24px;
+}
+.bottomLast{
+    width:100%;
+    margin:0 auto;
+}
+
+.bottomLast ul li {
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font:18px;
+    margin-left:80px;
+    margin-top: 10px;
+}
+.bottomLast ul li a {
+    color: grey;
+}
+/* END OF PAGE ONE */
+
+.topSectionText h2{
+    text-align: center;
+    color: orangered;
+    margin-top: 20px;
+}
+
+.container{
+    width:100%;
+    height:400px;
+
+}
+.container .blocks .mainImage{
+    width:100%;
+
+}
+
+.container .blocks{
+    width:30%;
+    height:420px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 35px;
+    border:1px solid rgb(224, 223, 223);
+}
+.container .blocks h3{
+    color: blue;
+}
+.container .blocks p:nth-of-type(3){
+    color:orangered;
+}
+
+.see{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom:20px;
+}
+
+.container2 h2{
+    color: red;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container2{
+    width:100%;
+    height:400px;
+    background-color: rgb(245,245,245);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container2 .last{
+    width:22.5%;
+    height:200px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 35px;
+    border:1px solid white;
+    background-color: white;
+}
+.container2 .last h4{
+    text-align: center;
+    margin-top:10px;
+}
+.container2 .last img{
+    width:35%;
+}
+
+/* MEDIA QUERIES START HERE */
+/* MMMMMMMMMMMMMMMEDIA */
+
+/*                     MOBILE LAYOUT */
+
+@media only screen and (max-width:480px){
+    .header{
+        overflow: hidden;
+    }
+    .container .blocks{
+        width:75%;
+        float:none;
+    }
+    .container2{
+        display:none;
+    }
+    .header .tlList{
+        display: none;
+    }
+    .buttons a{
+        display: none;
+    }
+    .buttons .favoritestyled{
+        display: none;
+    }
+    .buttons{
+        padding-top: 0;
+        margin-left: 90%;
+    }
+
+    .buttons i{
+        display:inline;
+        color: white;
+        font-size: 2.5rem;
+ 
+    }
+    .bottomLinks ul li{
+        display: block;
+
+    }
+    .bottomLinks{
+        width:100%
+
+    }
+    .header .navForm{
+        display: none;
+
+    }
+    
+    .header .logo h1 img{
+        margin: 3.5% 0px 20px 30%;
+    }
+
+    .bottomLast{
+        display: inline;
+        width:100%;
+    }
+
+    /*                  TABLET LAYOUT */
+}
+
+@media (min-width:481px) and (max-width:800px){
+    .header{
+        overflow: hidden;
+    }
+    .container .blocks{
+        width:90%;
+        float:none;
+        height:575px;
+    }
+   
+    .header .tlList{
+        display: none;
+    }
+    .buttons a{
+        display: none;
+    }
+    .buttons .favoritestyled{
+        display: none;
+    }
+    .buttons{
+        padding-top: 0;
+        margin-left: 90%;
+    }
+
+    .buttons i{
+        display:inline;
+        color: white;
+        font-size: 2.5rem;
+ 
+    }
+    .bottomLinks ul li{
+        display: none;
+    }
+    /* .bottomLinks{
+        width:100%
+
+    } */
+    .header .navForm{
+        display: none;
+
+    }
+    
+    .header .logo h1 img{
+        margin: 7% 0px 20px 40%;
+    }
+
+    .bottomLast{
+        display: inline;
+        width:100%;
+    }
+
+    .container2{
+        display: none;
+    }
+ 
+}
+
+
+@media (min-width:801px) and (max-width:1400px){
+    button{
+        display:none;
+    }
+    .header .navForm form{
+        display: inline;
+    }
+    .container2{
+        width:100%;
+        height:250px;
+        background-color: rgb(245,245,245);
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .container2 .last{
+        width:20%;
+        height:100px;
+        float: left;
+        margin-top: 20px;
+        margin-left: 10px;
+        border:1px solid white;
+        background-color: white;
+    }
+
+    .container .blocks{
+        width:27%;
+        height:400px;
+        float: left;
+        margin-top: 20px;
+        margin-left: 10px;
+        border:1px solid rgb(224, 223, 223);
+    }
+}
